@@ -88,6 +88,43 @@
 
     <div class="login-container">
         <h2>Login</h2>
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+
+           
+            $servername = "localhost";
+            $username = "root";
+            $dbpassword = "";
+            $dbname = "users_db";
+
+            
+            $conn = new mysqli($servername, $username, $dbpassword, $dbname);
+
+            
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+
+          
+            $sql = "SELECT * FROM users WHERE email = ? AND password = ?";
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param("ss", $email, $password);
+            $stmt->execute();
+            $result = $stmt->get_result();
+
+            if ($result->num_rows > 0) {
+                echo "<div class='alert alert-success'>Login successful! Redirecting...</div>";
+                header("refresh:2;url=home.php");
+            } else {
+                echo "<div class='alert alert-danger'>Invalid email or password!</div>";
+            }
+
+            $stmt->close();
+            $conn->close();
+        }
+        ?>
         <form action="home.html" method="POST">
             <div class="mb-3">
                 <label for="email" class="form-label">Email Address</label>
