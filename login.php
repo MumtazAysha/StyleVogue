@@ -91,14 +91,14 @@
         
         <form action="home.html" method="POST">
             <div class="mb-3">
-                <label for="email" class="form-label">Email Address</label>
+                <label for="email" class="form-label"><b>Email Address</b></label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
             </div>
             <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
+                <label for="password" class="form-label"><b>Password</b></label>
                 <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
             </div>
-            <button type="submit" class="btn w-100">Login</button>
+            <button type="submit" class="btn w-100"><b>Login</b></button>
         </form>
         <p class="text-center text-muted mt-3">
             Don't have an account? <a href="Sign up.php" style="color: #007bff; text-decoration: none;">Sign up here</a>
