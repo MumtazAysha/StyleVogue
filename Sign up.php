@@ -107,7 +107,7 @@
             </div>
             <div class="mb-3">
                 <label for="confirm password" class="form-label"><b>Confirm password</b></label>
-                <input type="confirm assword" class="form-control" id="confirm password" name="confirm password" placeholder="Confirm password" required>
+                <input type="confirm password" class="form-control" id="confirm password" name="confirm password" placeholder="Confirm password" required>
             </div>
             <button type="submit" class="btn w-100"><b>Sign up</b></button>
         </form>
