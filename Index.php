@@ -20,7 +20,7 @@
                 <li class="nav-item"><a href="#" class="nav-link text-white"><h5>Group Interaction</h5><img src="team.png" alt="Group interaction" height="50px"></a></li>
                 <li class="nav-item"><a href="#" class="nav-link text-white"><h5>Bulk Order Voting</h5><img src="voting-box.png" alt="Bulk order voting" height="50px"></a></li>
                 <li class="nav-item"><a href="#" class="nav-link text-white"><h5>Contact</h5><img src="phone.png" alt="Contact" height="50px"></a></li>
-                <li class="nav-item"><a href="login.html" class="nav-link text-white"><h5>Log in</h5><img src="enter.png" alt="Log in" height="50px"></a></li>
+                <li class="nav-item"><a href="login.php" class="nav-link text-white"><h5>Log in</h5><img src="enter.png" alt="Log in" height="50px"></a></li>
             </ul>
         </nav>
     </div>
