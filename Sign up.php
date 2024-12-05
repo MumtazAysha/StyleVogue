@@ -85,12 +85,57 @@
     </style>
 </head>
 <body>
-   <?php
+   
     <div class="overlay"></div>
 
    
     <div class="login-container">
-        <h2>Login</h2>
+        <h2>Sign Up</h2>
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $confirm_password = $_POST['confirm_password'];
+
+            // Check if passwords match
+            if ($password !== $confirm_password) {
+                echo "<div class='alert alert-danger'>Passwords do not match!</div>";
+            } else {
+                // Database connection details
+                $servername = "localhost";
+                $username = "root";
+                $dbpassword = "";
+                $dbname = "users_db";
+
+                // Create connection
+                $conn = new mysqli($servername, $username, $dbpassword, $dbname);
+
+                // Check connection
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
+                }
+
+                // Hash the password
+                $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+                // Insert user into the database
+                $sql = "INSERT INTO users (name, email, password) VALUES (?, ?, ?)";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param("sss", $name, $email, $hashed_password);
+
+                if ($stmt->execute()) {
+                    echo "<div class='alert alert-success'>Registration successful! Redirecting to login page...</div>";
+                    header("refresh:2;url=login.php");
+                } else {
+                    echo "<div class='alert alert-danger'>Error: " . $stmt->error . "</div>";
+                }
+
+                $stmt->close();
+                $conn->close();
+            }
+        }
+        ?>
         <form action="home.html" method="POST">
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
@@ -114,7 +159,7 @@
             Already have an account? <a href="login.html" style="color: #007bff; text-decoration: none;">Login here</a>
         </p>
     </div>
-    ?>
+    
     
 </body>
 </html>
