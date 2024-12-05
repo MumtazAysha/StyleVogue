@@ -106,7 +106,7 @@
                 <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
             </div>
             <div class="mb-3">
-                <label for="confirm password" class="form-label">Confirm password</label>
+                <label for="confirm password" class="form-label"><b>Confirm password</b></label>
                 <input type="confirm assword" class="form-control" id="confirm password" name="confirm password" placeholder="Confirm password" required>
             </div>
             <button type="submit" class="btn w-100">Sign up</button>
