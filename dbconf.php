@@ -4,5 +4,5 @@ $username = "root";
 $password = "mariadb";
 $dbname = "StyleVoguedb";
 
-$connection = mysql_connect($hostname,$username,$password,$dbname);
+$connection = mysqli_connect($hostname,$username,$password,$dbname);
 ?>
