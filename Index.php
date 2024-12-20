@@ -14,7 +14,7 @@
         <h1 class="logo">StyleVogue</h1>
         <nav>
             <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link text-white"><h5>Home</h5><img src="326656_home_icon.png" alt="Home" height="50px"></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white"><h5>Home</h5><img src="Images/326656_home_icon.png" alt="Home" height="50px"></a></li>
                 <li class="nav-item"><a href="#" class="nav-link text-white"><h5>About</h5><img src="info-button.png" alt="About" height="50px"></a></li>
                 <li class="nav-item"><a href="#" class="nav-link text-white"><h5>Collections</h5><img src="8672974_ic_fluent_collections_filled_icon.png" alt="collections" height="50px"></a></li>
                 <li class="nav-item"><a href="#" class="nav-link text-white"><h5>Group Interaction</h5><img src="team.png" alt="Group interaction" height="50px"></a></li>
