@@ -5,9 +5,9 @@
     if(isset($_POST["sign up"])){
         if($_POST["Password"] == $_POST["cPassword"]){
             $fullname = mysqli_real_escape_string($connection,$_POST["Name"]);
-            $mail = mysqli_real_escape_string($connection,$_POST["Email address"]);
+            $mail = mysqli_real_escape_string($connection,$_POST["email"]);
 
-            $sql = "INSERT INTO users (Name,Email address,Password) VALUES('{$Name}','{$Email address}','{$_POST["Password"]}')";
+            $sql = "INSERT INTO users (Name,Email address,Password) VALUES('{$Name}','{$email}','{$_POST["Password"]}')";
             $result_set = mysqli_query($connection,$sql);
 
             if(isset($result_set)){

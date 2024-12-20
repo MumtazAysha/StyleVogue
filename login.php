@@ -89,7 +89,7 @@
     <div class="login-container">
         <h2>Login</h2>
         
-        <form action="home.html" method="POST">
+        <form action="index.php" method="POST">
             <div class="mb-3">
                 <label for="email" class="form-label"><b>Email Address</b></label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
