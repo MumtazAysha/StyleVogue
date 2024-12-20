@@ -1,5 +1,5 @@
 <?php
-    require_once 'connection/connection.php';
+    require_once 'dbconf.php';
 ?>
 <?php
     if(isset($_POST["sign up"])){
