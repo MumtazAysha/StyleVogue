@@ -1,3 +1,26 @@
+<?php
+require_once 'dbconf.php';
+?>
+<?php
+session_start();
+if(isset($_POST["Signup"])){
+    $pswd = mysqli_real_escape_string($connection,$_POST["pswd"]);
+    $email = mysqli_real_escape_string($connection,$_POST["email"]);
+
+    if($email != "" && $pswd != ""){
+        $sqli = "SELECT * FROM users WHERE mail='{$mail}' AND pswd='{pswd}'";
+
+        $result_set1 = mysqli_query($connection,$sqli);
+
+        if(mysqli_num_rows($result_set1)==1){
+           $row = $mysqli_fetch_assoc($result_set1);
+
+           $_SESSION['user_id] = $row['userId'];
+           header("Location: Index.php");
+        }
+        }
+        }
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
