@@ -2,7 +2,7 @@
 $hostname = "127.0.0.1";
 $username = "root";
 $password = "mariadb";
-$dbname = "usersdb";
+$dbname = "users";
 
 $connection = mysqli_connect($hostname,$username,$password,$dbname);
 ?>
