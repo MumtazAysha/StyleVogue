@@ -2,12 +2,12 @@
     require_once 'dbconf.php';
 ?>
 <?php
-    if(isset($_POST["sign up"])){
+    if(isset($_POST["Signup"])){
         if($_POST["Password"] == $_POST["cPassword"]){
-            $fullname = mysqli_real_escape_string($connection,$_POST["Name"]);
-            $mail = mysqli_real_escape_string($connection,$_POST["email"]);
+            $name = mysqli_real_escape_string($connection,$_POST["name"]);
+            $email = mysqli_real_escape_string($connection,$_POST["email"]);
 
-            $sql = "INSERT INTO users (Name,Email address,Password) VALUES('{$Name}','{$email}','{$_POST["Password"]}')";
+            $sql = "INSERT INTO users (name,Email_address,Password) VALUES('{$name}','{$email}','{$_POST["Password"]}')";
             $result_set = mysqli_query($connection,$sql);
 
             if(isset($result_set)){
@@ -33,7 +33,7 @@
 
        
         body {
-            background-image: url('istockphoto-1352409276-612x612.jpg'); 
+            background-image: url('Images/istockphoto-1352409276-612x612.jpg'); 
             background-size: cover;
            
             background-repeat: no-repeat; 
@@ -110,24 +110,24 @@
     <div class="login-container">
         <h2>Sign Up</h2>
         
-        <form action="home.html" method="POST">
+        <form action="Sign up.php" method="POST">
             <div class="mb-3">
                 <label for="name" class="form-label"><b>Name</b></label>
-                <input type="name" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                <input type="name" class="form-control"  name="name" placeholder="Enter your name" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label"><b>Email Address</b></label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                <input type="email" class="form-control"  name="email" placeholder="Enter your email" required>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label"><b>Password</b></label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                <input type="password" class="form-control" name="Password" placeholder="Enter your password" required>
             </div>
             <div class="mb-3">
                 <label for="confirm password" class="form-label"><b>Confirm password</b></label>
-                <input type="confirm password" class="form-control" id="confirm password" name="confirm password" placeholder="Confirm password" required>
+                <input type="confirm password" class="form-control"  name="cPassword" placeholder="Confirm password" required>
             </div>
-            <button type="submit" name="Sign up" class="btn w-100"><b>Sign up</b></button>
+            <button type="submit" name="Signup" class="btn w-100"><b>Sign up</b></button>
         </form>
         <p class="text-center text-muted mt-3">
             Already have an account? <a href="login.php" style="color: #007bff; text-decoration: none;">Login here</a>

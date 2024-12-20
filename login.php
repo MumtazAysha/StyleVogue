@@ -15,7 +15,7 @@
 
        
         body {
-            background-image: url('istockphoto-1352409276-612x612.jpg');
+            background-image: url('Images/istockphoto-1352409276-612x612.jpg');
             background-size: cover;
            
             background-repeat: no-repeat; 
