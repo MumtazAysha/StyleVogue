@@ -1,3 +1,21 @@
+<?php
+    require_once 'connection/connection.php';
+?>
+<?php
+    if(isset($_POST["sign up"])){
+        if($_POST["Password"] == $_POST["cPassword"]){
+            $fullname = mysqli_real_escape_string($connection,$_POST["Name"]);
+            $mail = mysqli_real_escape_string($connection,$_POST["email"]);
+
+            $sql = "INSERT INTO users (Name,Email address,Password) VALUES('{$Name}','{$email}','{$_POST["Password"]}')";
+            $result_set = mysqli_query($connection,$sql);
+
+            if(isset($result_set)){
+                header("Location: login.php");
+            }
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,7 +127,7 @@
                 <label for="confirm password" class="form-label"><b>Confirm password</b></label>
                 <input type="confirm password" class="form-control" id="confirm password" name="confirm password" placeholder="Confirm password" required>
             </div>
-            <button type="submit" class="btn w-100"><b>Sign up</b></button>
+            <button type="submit" name="Sign up" class="btn w-100"><b>Sign up</b></button>
         </form>
         <p class="text-center text-muted mt-3">
             Already have an account? <a href="login.php" style="color: #007bff; text-decoration: none;">Login here</a>
