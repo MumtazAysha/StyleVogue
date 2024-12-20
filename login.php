@@ -3,19 +3,19 @@ require_once 'dbconf.php';
 ?>
 <?php
 session_start();
-if(isset($_POST["Signup"])){
+if(isset($_POST["login"])){
     $pswd = mysqli_real_escape_string($connection,$_POST["pswd"]);
     $email = mysqli_real_escape_string($connection,$_POST["email"]);
 
     if($email != "" && $pswd != ""){
-        $sqli = "SELECT * FROM users WHERE mail='{$mail}' AND pswd='{pswd}'";
+        $sqli = "SELECT * FROM users WHERE Email_address='{$mail}' AND Password='{$pswd}'";
 
         $result_set1 = mysqli_query($connection,$sqli);
 
         if(mysqli_num_rows($result_set1)==1){
-           $row = $mysqli_fetch_assoc($result_set1);
+           $row = mysqli_fetch_assoc($result_set1);
 
-           $_SESSION['user_id] = $row['userId'];
+           $_SESSION['user_id'] = $row['userid'];
            header("Location: Index.php");
         }
         }
@@ -119,9 +119,9 @@ if(isset($_POST["Signup"])){
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label"><b>Password</b></label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                <input type="password" class="form-control" name="pswd" placeholder="Enter your password" required>
             </div>
-            <button type="submit" class="btn w-100"><b>Login</b></button>
+            <button type="submit" name="login"  class="btn w-100"><b>Login</b></button>
         </form>
         <p class="text-center text-muted mt-3">
             Don't have an account? <a href="Sign up.php" style="color: #007bff; text-decoration: none;">Sign up here</a>
