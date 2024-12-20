@@ -41,21 +41,21 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="istockphoto-1097047438-612x612.jpg" class="d-block w-100" alt="Evening wear" height="500px">
+                <img src="Images/istockphoto-1097047438-612x612.jpg" class="d-block w-100" alt="Evening wear" height="500px">
                 <div class="carousel-caption d-none d-md-block">
                   <h4>Evening Wear</h4>
                   <p>Unleash your elegance with our premium evening wear collection</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="Office Wear Banner_1 (1).jpg" class="d-block w-100" alt="Office Wear" height="500px">
+                <img src="Images/Office Wear Banner_1 (1).jpg" class="d-block w-100" alt="Office Wear" height="500px">
                 <div class="carousel-caption d-none d-md-block">
                   <h4>Office Wear</h4>
                   <p>Old money style at your fingertips</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="ef2a781eb14293bdb7e92f0501b536f152869404-512x258.webp" class="d-block w-100" alt="Modern Hanbok" height="500px">
+                <img src="Images/ef2a781eb14293bdb7e92f0501b536f152869404-512x258.webp" class="d-block w-100" alt="Modern Hanbok" height="500px">
                 <div class="carousel-caption d-none d-md-block">
                   <h4>Modern Hanbok</h4>
                   <p>Some representative placeholder content for the third slide.</p>
@@ -90,7 +90,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="IMG_0968.webp" class="card-img-top" alt="Spice girls" height="500px">
+                    <img src="Images/IMG_0968.webp" class="card-img-top" alt="Spice girls" height="500px">
                     <div class="card-body">
                         <h5 class="card-title">Spice Girls Collection</h5>
                     </div>
@@ -98,7 +98,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="174f2cd9bc225f18f0103ccce2511533.jpg" class="card-img-top" alt="Old Money Collection">
+                    <img src="Images/174f2cd9bc225f18f0103ccce2511533.jpg" class="card-img-top" alt="Old Money Collection">
                     <div class="card-body">
                         <h5 class="card-title">Old Money Collection</h5>
                     </div>
@@ -106,7 +106,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="Modest-Fashion-8-819x1024.jpg" class="card-img-top" alt="Modest Wear">
+                    <img src="Images/Modest-Fashion-8-819x1024.jpg" class="card-img-top" alt="Modest Wear">
                     <div class="card-body">
                         <h5 class="card-title">Modest Girly</h5>
                         
@@ -216,17 +216,17 @@
         <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="istockphoto-1217216447-612x612.webp" class="d-block w-100" alt="Testimonial 1" height="500px">
+                    <img src="Images/istockphoto-1217216447-612x612.webp" class="d-block w-100" alt="Testimonial 1" height="500px">
                     <h5>"Amazing quality and customization options!"</h5>
                     <p><strong>- Janithi Ranaweera</strong></p>
                 </div>
                 <div class="carousel-item">
-                    <img src="istockphoto-1075564146-612x612.webp" class="d-block w-100" alt="Testimonial 2" height="500px"> 
+                    <img src="Images/istockphoto-1075564146-612x612.webp" class="d-block w-100" alt="Testimonial 2" height="500px"> 
                     <h5>"Our team loved the bulk order voting system!"</h5>
                     <p><strong>LMC Holdings</strong></p>
                 </div>
                 <div class="carousel-item">
-                    <img src="istockphoto-1076612148-612x612.webp" class="d-block w-100" alt="Testimonial 2" height="500px"> 
+                    <img src="Images/istockphoto-1076612148-612x612.webp" class="d-block w-100" alt="Testimonial 2" height="500px"> 
                     <h5>"Highly recommended for custom fashion!"</h5>
                     <p><strong>- Michelle Fernando</strong></p>
                 </div>
