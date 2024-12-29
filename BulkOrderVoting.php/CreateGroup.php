@@ -13,13 +13,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $sql = "INSERT INTO groups (group_name, description, category) VALUES ('$groupName', '$groupDescription', '$category')";
 
-    if ($conn->query($sql) === TRUE) {
+    if ($connection->query($sql) === TRUE) {
         echo "<script>alert('Group created successfully!'); window.location.href='create_group.html';</script>";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
-    $conn->close();
+    $connection->close();
 }
 ?>
 <!DOCTYPE html>
