@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <ul class="nav">
                     <li class="nav-item"><a href="#" class="nav-link text-white"><h5>Home</h5><img src="Images/326656_home_icon.png" alt="Home" height="50px"></a></li>
                     <li class="nav-item"><a href="#" class="nav-link text-white"><h5>About</h5><img src="Images/info-button.png" alt="About" height="50px"></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-white"><h5>Create Group</h5><img src="Images/voting-box.png" alt="Bulk order voting" height="50px"></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white"><h5>Create Group</h5><img src="Images/voting-box.png" alt="Create Group" height="50px"></a></li>
                     <li class="nav-item"><a href="#" class="nav-link text-white"><h5>Contact</h5><img src="Images/phone.png" alt="Contact" height="50px"></a></li>
                     
                 </ul>
