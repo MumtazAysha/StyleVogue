@@ -2,7 +2,7 @@
 require_once 'dbconf.php';
 ?>
 <?php
-if ($conn->connect_error) {
+if ($connection->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
