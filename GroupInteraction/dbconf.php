@@ -1,9 +1,9 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "mariadb";
 $dbname = "group_interaction_database";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$connection = new mysqli($servername, $username, $password, $dbname);
 ?>
