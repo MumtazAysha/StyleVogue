@@ -34,6 +34,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header class="text-white p-3" style="background-color: rgb(23, 167, 224);">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="logo">StyleVogue</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link text-white"><h5>Home</h5><img src="Images/326656_home_icon.png" alt="Home" height="50px"></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white"><h5>About</h5><img src="Images/info-button.png" alt="About" height="50px"></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white"><h5>Create Group</h5><img src="Images/voting-box.png" alt="Create Group" height="50px"></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white"><h5>Contact</h5><img src="Images/phone.png" alt="Contact" height="50px"></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
     <?php include 'header.php'; ?>
 
     <section class="group-interaction py-5">
