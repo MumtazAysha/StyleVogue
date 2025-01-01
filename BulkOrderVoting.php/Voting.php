@@ -32,6 +32,7 @@
         <div class="container text-center">
             <h2>Group Interaction</h2>
             <p>Join the community to create or join groups and collaborate on designs.</p>
+            <a href="Index.php" class="btn btn-outline-primary">Bulk Order Voting</a>
             <a href="CreateGroup.php" class="btn btn-primary">Create Group</a>
             <a href="Voting.php" class="btn btn-outline-primary">Join Group</a>
         </div>

@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </nav>
         </div>
     </header>
-    <?php include 'header.php'; ?>
+ 
 
     <section class="group-interaction py-5">
         <div class="container">
