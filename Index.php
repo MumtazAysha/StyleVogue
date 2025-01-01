@@ -248,20 +248,9 @@
 </section>
 
 
-<footer class="bg-dark text-white py-3">
-    <div class="container text-center">
-        <p>&copy; 2024 StyleVogue. All Rights Reserved.</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
-            <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
-        </ul>
-        <div>
-            <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
-        </div>
-    </div>
-</footer>
+<footer class="text-center py-4">
+        <p>&copy; 2024 StyleVogue. All rights reserved.</p>
+    </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
