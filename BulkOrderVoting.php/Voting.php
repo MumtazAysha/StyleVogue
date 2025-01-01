@@ -27,6 +27,7 @@
     </header>
 
     <!-- Group Interaction Section -->
+    <?php include 'header.php'; ?>
     <section class="group-interaction py-5 bg-light">
         <div class="container text-center">
             <h2>Group Interaction</h2>
