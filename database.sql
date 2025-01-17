@@ -93,7 +93,7 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (1,'Classic T-Shirt','High-quality cotton T-shirt.',3690.00,'Apparel','Images/tshirt.jpg'),(2,'Denim Jeans','Slim-fit, durable denim jeans.',5590.00,'Apparel','Images/jeans.jpg'),(3,'Leather Jacket','Stylish leather jacket.',2200.00,'Outerwear','Images/jacket.jpg'),(4,'Running Shoes','Comfortable running shoes.',6000.00,'Footwear','Images/shoes.jpg');
+INSERT INTO `products` VALUES (1,'Classic T-Shirt','High-quality cotton T-shirt.',3690.00,'Apparel','Images/tshirt.jpg'),(2,'Denim Jeans','Slim-fit, durable denim jeans.',5590.00,'Apparel','Images/denim.webp'),(3,'Leather Jacket','Stylish leather jacket.',2200.00,'Outerwear','Images/jacket.webp'),(4,'Running Shoes','Comfortable running shoes.',6000.00,'Footwear','Images/shoes.jpg');
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 
