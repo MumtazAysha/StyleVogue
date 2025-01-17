@@ -1,26 +1,15 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "collections_database";
-
-// Connect to the database
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require_once 'dbconf.php';
 
 // Fetch products based on search/filter
 $whereClause = "1"; // Default to no filter
 if (isset($_GET['search'])) {
-    $searchTerm = $conn->real_escape_string($_GET['search']);
+    $searchTerm = $connection->real_escape_string($_GET['search']);
     $whereClause = "product_name LIKE '%$searchTerm%'";
 }
 
 if (isset($_GET['category']) && $_GET['category'] !== '') {
-    $category = $conn->real_escape_string($_GET['category']);
+    $category = $connection->real_escape_string($_GET['category']);
     $whereClause .= " AND category = '$category'";
 }
 
@@ -35,7 +24,7 @@ if (isset($_GET['price']) && $_GET['price'] !== '') {
 }
 
 $sql = "SELECT * FROM products WHERE $whereClause";
-$result = $conn->query($sql);
+$result = $connection->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -103,4 +92,3 @@ $result = $conn->query($sql);
 </body>
 </html>
 
-<?php $conn->close(); ?>
