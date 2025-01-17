@@ -77,7 +77,7 @@ $result = $connection->query($sql);
                             <div class="card-body">
                                 <h5 class="card-title"><?= htmlspecialchars($row['product_name']) ?></h5>
                                 <p class="card-text"><?= htmlspecialchars($row['description']) ?></p>
-                                <p class="text-primary">$<?= number_format($row['price'], 2) ?></p>
+                                <p class="text-primary">Rs.<?= number_format($row['price'], 2) ?></p>
                             </div>
                         </div>
                     </div>
