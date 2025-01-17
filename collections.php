@@ -63,7 +63,7 @@ $result = $connection->query($sql);
                 </select>
             </div>
             <div class="col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Apply Filters</button>
+                <button type="submit" class="btn btn-primary">Search</button>
             </div>
         </form>
 
