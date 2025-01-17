@@ -19,7 +19,7 @@ if (isset($_GET['price']) && $_GET['price'] !== '') {
     } elseif ($_GET['price'] == 'medium') {
         $whereClause .= " AND price BETWEEN 1500.00 AND 3500.00";
     } elseif ($_GET['price'] == 'high') {
-        $whereClause .= " AND price > 3500.00";
+        $whereClause .= " AND price > 5000.00";
     }
 }
 
