@@ -3,22 +3,20 @@ require_once 'dbconf.php';
 ?>
 <?php
 session_start();
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+
 $error = '';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $conn->real_escape_string($_POST['username']);
-    $password = $conn->real_escape_string($_POST['password']);
+    $username = $connection->real_escape_string($_POST['username']);
+    $password = $connection->real_escape_string($_POST['password']);
 
-    // Query to fetch user details
+    
     $sql = "SELECT * FROM users WHERE username = '$username'";
-    $result = $conn->query($sql);
+    $result = $connection->query($sql);
 
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
 
-        // Verify password
+        
         if (password_verify($password, $user['password'])) {
             // Redirect to the home page or dashboard
             $_SESSION['username'] = $username;
@@ -31,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = "No account found with this username.";
     }
 }
-$conn->close();
+$connection->close();
 
 if(isset($_POST["login"])){
     $pswd = mysqli_real_escape_string($connection,$_POST["pswd"]);
