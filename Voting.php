@@ -32,7 +32,7 @@
         <div class="container text-center">
             <h2>Group Interaction</h2>
             <p>Join the community to create or join groups and collaborate on designs.</p>
-            <a href="Index.php" class="btn btn-outline-primary">Bulk Order Voting</a>
+            <a href="index.php" class="btn btn-outline-primary">Bulk Order Voting</a>
             <a href="CreateGroup.php" class="btn btn-primary">Create Group</a>
             <a href="Voting.php" class="btn btn-outline-primary">Join Group</a>
         </div>
@@ -46,7 +46,7 @@
                 <!-- Example Card -->
                 <div class="col">
                     <div class="card">
-                        <img src="design1.jpg" class="card-img-top" alt="Design 1">
+                        <img src="/Images/design1.avif" class="card-img-top" alt="Design 1">
                         <div class="card-body text-center">
                             <h5 class="card-title">Design 1</h5>
                             <p class="card-text">Elegant and customizable for any event.</p>
@@ -64,7 +64,7 @@
                 <!-- Add more design cards here -->
                 <div class="col">
                     <div class="card">
-                        <img src="design1.jpg" class="card-img-top" alt="Design 1">
+                        <img src="Images/design2.png" class="card-img-top" alt="Design 1">
                         <div class="card-body text-center">
                             <h5 class="card-title">Design 1</h5>
                             <p class="card-text">Elegant and customizable for any event.</p>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="design1.jpg" class="card-img-top" alt="Design 1">
+                        <img src="Images/design3.jpg" class="card-img-top" alt="Design 1">
                         <div class="card-body text-center">
                             <h5 class="card-title">Design 1</h5>
                             <p class="card-text">Elegant and customizable for any event.</p>
