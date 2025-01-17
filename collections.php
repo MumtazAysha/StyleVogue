@@ -59,7 +59,7 @@ $result = $connection->query($sql);
                     <option value="">All Prices</option>
                     <option value="low" <?= isset($_GET['price']) && $_GET['price'] == 'low' ? 'selected' : '' ?>>Below Rs.1500.00</option>
                     <option value="medium" <?= isset($_GET['price']) && $_GET['price'] == 'medium' ? 'selected' : '' ?>>Rs.1500.00-Rs.3500.00</option>
-                    <option value="high" <?= isset($_GET['price']) && $_GET['price'] == 'high' ? 'selected' : '' ?>>Above Rs.3500.00</option>
+                    <option value="high" <?= isset($_GET['price']) && $_GET['price'] == 'high' ? 'selected' : '' ?>>Above Rs.5000.00</option>
                 </select>
             </div>
             <div class="col-md-12 text-center">
