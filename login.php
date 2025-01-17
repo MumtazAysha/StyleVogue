@@ -2,25 +2,28 @@
 require_once 'dbconf.php';
 ?>
 <?php
+if ($connection->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 session_start();
 
 $error = '';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $connection->real_escape_string($_POST['username']);
-    $password = $connection->real_escape_string($_POST['password']);
+    $email = $connection->real_escape_string($_POST['email']);
+    $pswd = $connection->real_escape_string($_POST['pswd']);
 
     
-    $sql = "SELECT * FROM users WHERE username = '$username'";
+    $sql = "SELECT * FROM users WHERE Email_address = '$email'";
     $result = $connection->query($sql);
 
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
 
         
-        if (password_verify($password, $user['password'])) {
+        if (password_verify($pswd, $email['email'])) {
             // Redirect to the home page or dashboard
-            $_SESSION['username'] = $username;
-            header("Location: home.php");
+            $_SESSION['email'] = $email;
+            header("Location: index.php");
             exit;
         } else {
             $error = "Incorrect password. Please try again.";

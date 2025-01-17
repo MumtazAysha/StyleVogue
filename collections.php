@@ -1,8 +1,8 @@
 <?php
 require_once 'dbconf.php';
 
-// Fetch products based on search/filter
-$whereClause = "1"; // Default to no filter
+
+$whereClause = "1"; 
 if (isset($_GET['search'])) {
     $searchTerm = $connection->real_escape_string($_GET['search']);
     $whereClause = "product_name LIKE '%$searchTerm%'";
@@ -15,11 +15,11 @@ if (isset($_GET['category']) && $_GET['category'] !== '') {
 
 if (isset($_GET['price']) && $_GET['price'] !== '') {
     if ($_GET['price'] == 'low') {
-        $whereClause .= " AND price < 50";
+        $whereClause .= " AND price < 1500.00";
     } elseif ($_GET['price'] == 'medium') {
-        $whereClause .= " AND price BETWEEN 50 AND 100";
+        $whereClause .= " AND price BETWEEN 1500.00 AND 3500.00";
     } elseif ($_GET['price'] == 'high') {
-        $whereClause .= " AND price > 100";
+        $whereClause .= " AND price > 3500.00";
     }
 }
 
@@ -57,9 +57,9 @@ $result = $connection->query($sql);
             <div class="col-md-3">
                 <select class="form-select" name="price">
                     <option value="">All Prices</option>
-                    <option value="low" <?= isset($_GET['price']) && $_GET['price'] == 'low' ? 'selected' : '' ?>>Below $50</option>
-                    <option value="medium" <?= isset($_GET['price']) && $_GET['price'] == 'medium' ? 'selected' : '' ?>>$50-$100</option>
-                    <option value="high" <?= isset($_GET['price']) && $_GET['price'] == 'high' ? 'selected' : '' ?>>Above $100</option>
+                    <option value="low" <?= isset($_GET['price']) && $_GET['price'] == 'low' ? 'selected' : '' ?>>Below Rs.1500.00</option>
+                    <option value="medium" <?= isset($_GET['price']) && $_GET['price'] == 'medium' ? 'selected' : '' ?>>Rs.1500.00-Rs.3500.00</option>
+                    <option value="high" <?= isset($_GET['price']) && $_GET['price'] == 'high' ? 'selected' : '' ?>>Above Rs.3500.00</option>
                 </select>
             </div>
             <div class="col-md-12 text-center">
